@@ -12,7 +12,7 @@ layer {
     mean_value: 127.5
   }
   image_data_param {
-    source: "/home/test/cdata/val_1000.txt"
+    source: "/home/test/data/val_1000.txt"
     new_width: 224
     new_height: 224
     batch_size: 256
