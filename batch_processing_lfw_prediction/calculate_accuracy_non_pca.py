@@ -48,6 +48,8 @@ def main(argv=None):
   accuracy_path = os.path.join(rt_dir_accuracy, '{}_non_pca.txt'.format(args.version))
   
   fp_acc = open(accuracy_path, 'w')
+  fp_acc.write('iter     acc_ori   acc_cat   acc_add   th_o   th_c   th_a\n')
+  fp_acc.write('---------------------------------------------------------\n')
 
   PAIRS_NUM = 6000
   for loop_iter in xrange(666):
